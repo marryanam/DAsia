@@ -1,0 +1,66 @@
+/*---------------------------------    breakpoints    -------------------------------*/
+
+$break-xl: 1200px;
+$break-lg: 992px;
+$break-md: 768px;
+$break-sm: 576px;
+$break-xs: 375px;
+
+@mixin breakpoint($point) {
+  @if $point==xl {
+    @media only screen and (max-width: $break-xl) {
+      @content;
+    }
+  }
+
+  @else if $point==lg {
+    @media only screen and (max-width: $break-lg) {
+      @content;
+    }
+  }
+
+  @else if $point==md {
+    @media only screen and (max-width: $break-md) {
+      @content;
+    }
+  }
+
+  @else if $point==sm {
+    @media only screen and (max-width: $break-sm) {
+      @content;
+    }
+  }
+
+  @else if $point==xs {
+    @media only screen and (max-width: $break-xs) {
+      @content;
+    }
+  }
+}
+
+/*---------------------------------    grid    -------------------------------*/
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  @include breakpoint(lg) {
+    max-width: 960px;
+  }
+
+  @include breakpoint(md) {
+    max-width: 720px;
+  }
+
+  @include breakpoint(sm) {
+    max-width: 540px;
+  }
+
+  @include breakpoint(xs) {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,41 @@
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.25;
+	color: #ffff;
+
+	@include breakpoint(lg) {
+		line-height: 1.5;
+	}
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1;
+	padding-bottom: 10px;
+
+	@include breakpoint(lg) {
+		line-height: 1.5;
+	}
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.22;
+	color: #000;
+
+	@include breakpoint(lg) {
+		font-size: 30px;
+	}
+
+	@include breakpoint(md) {
+		font-size: 26px;
+	}
+}

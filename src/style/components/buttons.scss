@@ -1,0 +1,84 @@
+.btn {
+	width: 210px;
+	height: 45px;
+	border-radius: 20px;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	background-color: $violet;
+	cursor: pointer;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: all 0.5s ease;
+	overflow: hidden;
+	letter-spacing: 0.9px;
+
+	@include breakpoint(lg) {
+		width: 170px;
+	}
+
+	@include breakpoint(sm) {
+		width: 130px;
+		height: 35px;
+		font-size: 14px;
+	}
+
+	&:hover {
+		color: $violet;
+		background: #fff;
+	}
+
+	&:not(:hover) {
+		color: #fff;
+		background: $violet;
+
+		&:after {
+			transform: skewX(20deg) translateX(300px);
+		}
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -70px;
+		height: 98px;
+		width: 50px;
+		background: rgba(255, 255, 255, 0.4);
+		transition: all .3s linear;
+		transform: skewX(20deg) translateX(0);
+		transition: all 0.5s ease;
+	}
+}
+
+.read {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	position: relative;
+	cursor: pointer;
+	text-transform: uppercase;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		background: #666666;
+		height: 1px;
+		text-transform: uppercase;
+		width: 100%;
+	}
+
+	i {
+		position: relative;
+		transition: all 0.5s ease;
+	}
+
+	&:hover {
+		i {
+			transform: translateX(10px);
+		}
+	}
+}

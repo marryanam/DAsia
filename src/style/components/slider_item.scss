@@ -1,0 +1,169 @@
+.sliderItem {
+	background: #fff;
+	box-shadow: 0px 8px 20px -10px #b2b2b2;
+	max-width: 360px;
+	margin: 30px auto;
+
+	@media(max-width:1060px) {
+		max-width: 320px;
+	}
+
+	@include breakpoint(xs) {
+		max-width: 290px;
+	}
+
+	&__img {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__labe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 12px;
+		line-height: 1;
+		color: $orange;
+		width: auto;
+		padding: 5px 0;
+		z-index: 2;
+
+		&:after {
+			content: '';
+			position: absolute;
+			transform: skew(-20deg);
+			background-color: rgba(0, 0, 0, 0.52);
+			z-index: -1;
+			width: 135%;
+			height: 100%;
+			left: -25px;
+			top: 0;
+		}
+
+		svg {
+			margin: 0 5px;
+		}
+
+		p {
+			transform: skew(20deg);
+			position: absolute;
+		}
+	}
+
+	&__title {
+		font-size: 16px;
+		font-weight: bold;
+		color: #121212;
+		padding: 10px 0;
+	}
+
+	&__content {
+		padding: 0 20px 20px;
+	}
+
+	&__counter {
+		display: flex;
+		justify-content: space-between;
+
+		.count {
+			margin-right: 0;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+
+			&:nth-child(3) {
+
+				.count__number,
+				.count__text {
+					color: $yellow;
+				}
+			}
+		}
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 10px;
+
+		.btn {
+			width: 120px;
+			height: 40px;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+}
+
+.swiper-button-prev {
+	background: none;
+	width: 40px;
+	height: 40px;
+
+	@include breakpoint(sm) {
+		right: 22%;
+		margin-top: 30px;
+	}
+
+	@include breakpoint(xs) {
+		right: 10%;
+	}
+}
+
+.swiper-button-next {
+	background: none;
+	width: 40px;
+	height: 40px;
+	margin-top: 30px;
+
+	@include breakpoint(sm) {
+		right: 70%;
+	}
+
+	@include breakpoint(xs) {
+		right: 80%;
+	}
+}
+
+.main-cards__buttons {
+	position: absolute;
+	left: -175px;
+	top: 20%;
+
+	@include breakpoint(sm) {
+		left: 0;
+		top: 90%;
+		width: 100%;
+	}
+}
+
+.swiper__pagination {
+	padding: 10px 0;
+	position: absolute;
+	bottom: 100px;
+	left: -160px;
+	z-index: 4;
+	background: transparent;
+	width: 100px;
+	height: 3px;
+	padding: 0;
+	border-bottom: 1px solid white;
+
+	@include breakpoint(sm) {
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		bottom: -20px;
+	}
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: #fff;
+}

@@ -1,0 +1,52 @@
+.blockInsert {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: #7e4ad0;
+	padding: 22px 0;
+	margin: 50px 0 70px;
+	background-image: url(../img/2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+
+	@include breakpoint(xl) {
+		background-size: cover;
+	}
+
+	@include breakpoint(sm) {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__lt {
+		padding-right: 70px;
+
+		@include breakpoint(sm) {
+			padding-right: 0;
+		}
+
+		.title {
+			@include breakpoint(sm) {
+				line-height: 1.2;
+				padding: 20px;
+			}
+		}
+	}
+
+	.btn {
+		background: #fff;
+		color: $pink;
+
+		@include breakpoint(sm) {
+			width: 210px;
+			height: 40px;
+		}
+
+		&:hover {
+			color: #fff;
+			background: $pink
+		}
+	}
+}
