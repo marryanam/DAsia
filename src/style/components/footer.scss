@@ -114,6 +114,15 @@
 	.btn {
 		background: $pinkish-red;
 
+		&:not(:hover) {
+			color: #fff;
+			background: $pinkish-red;
+		}
+
+		&:hover {
+			color: $pinkish-red;
+		}
+
 		@include breakpoint(sm) {
 			display: none;
 		}
@@ -129,7 +138,7 @@
 }
 
 .empty {
-	@media(max-width: 700px) {
+	@media(max-width: 1110px) {
 		display: none;
 	}
 }
