@@ -61,6 +61,6 @@ $break-xs: 375px;
 
   @include breakpoint(xs) {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0;
   }
 }

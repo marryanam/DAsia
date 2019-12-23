@@ -15,6 +15,10 @@
 		background-size: cover;
 	}
 
+	@include breakpoint(md) {
+		margin: 50px 10px 70px;
+	}
+
 	@include breakpoint(sm) {
 		flex-direction: column;
 		text-align: center;

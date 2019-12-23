@@ -1,14 +1,10 @@
 .sliderItem {
 	background: #fff;
 	box-shadow: 0px 8px 20px -10px #b2b2b2;
-	max-width: 360px;
+	max-width: 320px;
 	margin: 30px auto;
 
-	@media(max-width:1060px) {
-		max-width: 320px;
-	}
-
-	@include breakpoint(xs) {
+	@include breakpoint(sm) {
 		max-width: 290px;
 	}
 
@@ -58,7 +54,7 @@
 		font-size: 16px;
 		font-weight: bold;
 		color: #121212;
-		padding: 10px 0;
+		padding: 10px 0 5px;
 	}
 
 	&__content {
@@ -109,7 +105,7 @@
 
 	@include breakpoint(sm) {
 		right: 22%;
-		margin-top: 30px;
+		margin-top: 35px;
 	}
 
 	@include breakpoint(xs) {
@@ -121,10 +117,11 @@
 	background: none;
 	width: 40px;
 	height: 40px;
-	margin-top: 30px;
+	margin-top: 25px;
 
 	@include breakpoint(sm) {
 		right: 70%;
+		margin-top: 35px;
 	}
 
 	@include breakpoint(xs) {
@@ -134,8 +131,8 @@
 
 .main-cards__buttons {
 	position: absolute;
-	left: -175px;
-	top: 20%;
+	left: -120px;
+	top: 115px;
 
 	@include breakpoint(sm) {
 		left: 0;
@@ -148,13 +145,13 @@
 	padding: 10px 0;
 	position: absolute;
 	bottom: 100px;
-	left: -160px;
+	left: -115px;
 	z-index: 4;
 	background: transparent;
-	width: 100px;
-	height: 3px;
+	width: 90px;
+	height: 2px;
 	padding: 0;
-	border-bottom: 1px solid white;
+	border-bottom: 0.5px solid white;
 
 	@include breakpoint(sm) {
 		left: 50%;

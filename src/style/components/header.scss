@@ -8,7 +8,7 @@ header {
 	z-index: 10;
 
 	@media(max-width: 700px) {
-		height: 65px;
+		height: 70px;
 	}
 }
 
@@ -21,6 +21,12 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px 0;
+	@media(max-width: 700px) {
+		padding: 9px 10px;
+	}
+	@include breakpoint(sm) {
+			padding: 15px 10px;
+	}
 
 	&__block {
 		display: flex;
@@ -102,6 +108,10 @@ main {
 }
 
 .menu {
+	padding: 0 20px;
+	@include breakpoint(md) {
+		padding:0;
+	}
 	@media(max-width: 700px) {
 		position: absolute;
 		width: 100%;
@@ -129,13 +139,9 @@ main {
 		}
 
 		li {
-			margin: 0 40px;
+			margin: 0 20px;
 			transition: all 0.5s ease;
 			position: relative;
-
-			@include breakpoint(xl) {
-				margin: 0 20px;
-			}
 
 			@include breakpoint(lg) {
 				margin: 0 10px;
