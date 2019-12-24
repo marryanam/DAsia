@@ -66,6 +66,12 @@
 		transition: all 0.5s ease;
 		animation: 2s slidein infinite;
 	}
+	&:hover{
+		&:after {
+			animation-play-state: paused;
+			background: transparent;
+		}
+	}
 }
 
 @keyframes slidein {

@@ -1167,6 +1167,11 @@ main {
   -webkit-animation: 2s slidein infinite;
           animation: 2s slidein infinite; }
 
+.btn_2:hover:after {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  background: transparent; }
+
 @-webkit-keyframes slidein {
   from {
     -webkit-transform: skewX(20deg) translateX(300px);
