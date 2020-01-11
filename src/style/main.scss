@@ -1,6 +1,7 @@
 /*---------------------------------    general    -------------------------------*/
 @import "general/style_reset";
 @import "general/grid";
+@import "general/fonts";
 @import "general/general";
 @import "general/swiper";
 
@@ -16,3 +17,6 @@
 
 // front-page
 @import "pages/index";
+
+// blog-page
+@import "pages/blog";
