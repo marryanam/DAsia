@@ -825,6 +825,9 @@ header {
 
 main {
   padding-top: 80px; }
+  @media (max-width: 700px) {
+    main {
+      padding-top: 65px; } }
 
 .header {
   display: -webkit-box;
@@ -865,7 +868,9 @@ main {
     .logo {
       width: 100px; } }
   .logo img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    display: block; }
 
 .menuIcon {
   display: none;
@@ -1688,6 +1693,9 @@ main {
 .blog__top {
   background-color: #f1f6fc;
   padding: 40px 0 50px; }
+  @media only screen and (max-width: 576px) {
+    .blog__top {
+      padding: 25px 0; } }
 
 .blog__title {
   font-size: 24px;
@@ -1811,7 +1819,7 @@ main {
       height: 7px;
       position: absolute;
       left: 0;
-      top: 50%;
+      top: 47%;
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg) translateY(-50%);
       -webkit-transition: all 0.15s ease-in-out;
@@ -1974,7 +1982,8 @@ main {
               justify-content: center;
       -webkit-box-align: center;
               align-items: center;
-      border-right: 0; }
+      border-right: 0;
+      font-weight: bold; }
       .pagination ul li a:hover {
         background-color: #adb9c8;
         color: #fff; }

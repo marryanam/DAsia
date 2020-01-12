@@ -2,6 +2,9 @@
   &__top{
     background-color: #f1f6fc;
     padding: 40px 0 50px;
+    @include breakpoint(sm) {
+      padding: 25px 0;
+    }
   }
   &__title{
     font-size: 24px;
@@ -133,7 +136,7 @@
       height: 7px;
       position: absolute;
       left: 0;
-      top: 50%;
+      top: 47%;
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg) translateY(-50%);
       -webkit-transition: all 0.15s ease-in-out;
@@ -291,6 +294,7 @@
         justify-content: center;
         align-items: center;
         border-right: 0;
+        font-weight: bold;
         &:hover {
           background-color: #adb9c8;
           color: #fff;
