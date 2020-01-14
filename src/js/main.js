@@ -93,6 +93,18 @@ $(document).ready(function () {
     article__description = article__description.substring(0, 450);
     $(".article__description").text(article__description);
   }
+  if ($(window).width() < 600) {
+    var post__desc = $(".post__desc").text().trim();
+    if (post__desc.length > 155) {
+      post__desc = post__desc.substring(0, 155);
+      $(".post__desc").text(post__desc + "...");
+    }
+    var post__title = $(".post__title").text().trim();
+    if (post__title.length > 28) {
+      post__title = post__title.substring(0, 28);
+      $(".post__title").text(post__title);
+    }
+  }
   /*---------------------------------   menu    -------------------------------*/
 
   $(".menuIcon").on("click", function () {
@@ -108,5 +120,6 @@ $(document).ready(function () {
       $(this).removeClass("opened");
     }
   });
+
 
 });
