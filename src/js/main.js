@@ -121,5 +121,14 @@ $(document).ready(function () {
     }
   });
 
+    /*---------------------------------   tabs    -------------------------------*/
+
+    $(".tab__btn").on("click", function () {
+      $(this).next().fadeIn();
+      $('.tab__content .tab__icon').on("click", function () {
+        $(this).parent().fadeOut();
+      });
+    });
+
 
 });
