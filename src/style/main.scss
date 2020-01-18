@@ -12,6 +12,8 @@
 @import "components/buttons";
 @import "components/blockInsert";
 @import "components/slider_item";
+@import "components/tabs";
+@import "components/pagination";
 
 /*---------------------------------    pages    -------------------------------*/
 
@@ -20,3 +22,6 @@
 
 // blog-page
 @import "pages/blog";
+
+// post-page
+@import "pages/post";

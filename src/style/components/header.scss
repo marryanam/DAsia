@@ -5,7 +5,7 @@ header {
 	height: 80px;
 	box-shadow: 0px 8px 20.9px 3.1px rgba(0, 0, 0, 0.08);
 	background-color: #fff;
-	z-index: 10;
+	z-index: 12;
 
 	@media(max-width: 700px) {
 		height: 70px;
@@ -170,8 +170,16 @@ main {
 			}
 
 			&.active {
+				a{
+					@media(max-width: 700px) {
+						color: $violet;
+					}
+				}
 				&:after {
 					width: 100%;
+					@media(max-width: 700px) {
+						width: 0;
+					}
 				}
 			}
 
@@ -179,6 +187,9 @@ main {
 				width: 62px;
 				letter-spacing: 0.7px;
 				color: #0a0a0a;
+				@media(max-width: 700px) {
+					font-weight: bold;
+				}
 
 				&:hover {
 					color: $violet;

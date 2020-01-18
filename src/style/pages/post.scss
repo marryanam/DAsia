@@ -1,0 +1,138 @@
+.postInner{
+  padding: 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  @include breakpoint(sm) {
+    padding: 30px 15px;
+  }
+  &__title{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    @include breakpoint(sm) {
+      font-size: 24px;
+    }
+  }
+  &__info {
+    margin: 25px auto;
+    justify-content: center;
+    @include breakpoint(sm) {
+      margin: 15px 0;
+    }
+  }
+  &__thumb {
+    display: block;
+    margin: 0 auto 20px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    @include breakpoint(sm) {
+      margin: 0 auto 10px;
+    }
+  }
+  &__content {
+    font-size: 14px;
+    line-height: 1.5;
+    p{
+      padding: 10px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      @include breakpoint(sm) {
+         padding: 5px 0;
+      }
+    }
+  }
+}
+.editor{
+  font-size: 14px;
+  line-height: 1.5;
+  p {
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0 10px;
+    text-transform: uppercase;
+    @include breakpoint(sm) {
+      font-size: 22px;
+      padding: 20px 0 5px;
+    }
+  }
+  h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  b{
+    padding: 5px 0;
+    display: block;
+  }
+  ul{
+    padding-left: 15px;
+    li{
+      position: relative;
+      margin: 5px 0;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: $violet;
+        top: 7px;
+        left: -15px;
+        border-radius: 100%;
+      }
+    }
+  }
+  .blockInsert{
+    margin: 20px 0;
+    background-size: 110%;
+    @include breakpoint(sm) {
+      background-size: cover;
+    }
+  }
+  ol{
+    padding-left: 15px;
+    li{
+      list-style-type: decimal;
+      padding-left: 5px;
+      margin: 5px 0;
+    }
+  }
+  .img-left {
+    padding-left: 0;
+  }
+
+  .img-right {
+    padding-right: 0;
+  }
+  img{
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    @include breakpoint(md) {
+      float: none !important;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+  }
+}
+.postPage{
+  .article__slider {
+    margin: 20px 0 60px;
+    @include breakpoint(sm) {
+      margin: 20px 0 120px;
+    }
+    .title:after {
+      top: 4px;
+    }
+  }
+}
