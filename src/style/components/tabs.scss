@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 125px;
-  z-index: 5;
+  z-index: 12;
 
   @include breakpoint(sm) {
     display: none;
