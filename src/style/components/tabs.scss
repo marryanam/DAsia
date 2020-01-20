@@ -11,7 +11,8 @@
   &__item {
     position: relative;
 
-    &:last-child {
+    &-2{
+      display: none;
       .tab__btn {
         width: 154px;
         height: 62px;

@@ -130,5 +130,16 @@ $(document).ready(function () {
       });
     });
 
+    $(document).scroll(function () {
+      var y = $(this).scrollTop();
+      var body = document.body.scrollHeight;
+      console.log(body);
+      if (y > body/2) {
+        $('.tab__item-2').fadeIn();
+      } else {
+        $('.tab__item-2').fadeOut();
+      }
+    });
+
 
 });
