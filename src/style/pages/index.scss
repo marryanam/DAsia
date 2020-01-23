@@ -1,7 +1,10 @@
 .home{
-  margin: 100px 0;
+  margin: 30px 0;
   &__top{
     position: relative;
+    @include breakpoint(sm) {
+      padding: 0 15px;
+    }
   }
   &__titles{
     padding-top: 90px;
@@ -61,6 +64,9 @@
 
 .lookingFor{
   margin-bottom: 50px;
+  @include breakpoint(sm) {
+    margin: 120px 0 50px;
+  }
   &__title {
     font-size: 24px;
     font-weight: bold;
@@ -74,7 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 40px 0 20px;
     @include breakpoint(md) {
       flex-wrap: wrap;
     }
@@ -90,24 +96,51 @@
     justify-content: center;
     align-items: center;
     margin: 10px auto;
+    transition: all 1s ease;
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: -3px 10px 13px 0px rgba(104, 102, 209, 0.3);
+    }
     @media(max-width:1024px){
        width: 190px;
     }
     @include breakpoint(md) {
       width: 120px;
-      height: 120px;
+      height: 100px;
       text-align: center;
       padding: 10px;
+      margin: 10px;
     }
     img{
       display: block;
       max-width: 100%;
       height: auto;
     }
+    @include breakpoint(sm) {
+      &:nth-child(1){
+        order: 1;
+      }
+    }
+    @include breakpoint(sm) {
+      &:nth-child(2) {
+        order: 3;
+      }
+    }
+    @include breakpoint(sm) {
+      &:nth-child(3) {
+        order: 4;
+      }
+    }
+    @include breakpoint(sm) {
+      &:nth-child(4) {
+        order: 2;
+      }
+    }
   }
   &__name {
     font-size: 20px;
     font-weight: bold;
+    color: #000;
     @include breakpoint(md) {
       font-size: 16px;
     }
@@ -119,6 +152,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include breakpoint(sm) {
+    padding: 0 15px;
+  }
   @include breakpoint(sm) {
     flex-direction: column;
     margin: 0px 0 50px;
@@ -140,6 +176,9 @@
   &__text {
     margin: 20px 0;
     line-height: 1.5;
+    @include breakpoint(sm) {
+      margin: 5px 0 20px;
+    }
     p{
       padding: 5px 0;
     }
@@ -158,12 +197,19 @@
     height: auto;
     margin: 0 auto;
     border-radius: 10px;
+    @include breakpoint(sm) {
+      max-width: 80%;
+      margin: 0;
+    }
     &-2{
       position: absolute;
       top: -65px;
       right: 0;
       border-radius: 10px;
       box-shadow: -7px 0 20px rgba(0, 0, 0, 0.39);
+      @include breakpoint(sm) {
+        max-width: 55%;
+      }
     }
   }
 }
@@ -179,6 +225,9 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
+    @include breakpoint(sm) {
+      padding: 40px 0 10px;
+    }
   }
   &__title{
     font-size: 24px;
@@ -193,6 +242,10 @@
     position: relative;
     padding: 0 10px;
     margin: 10px 0;
+    @include breakpoint(sm) {
+      padding: 0 15px;
+      width: 100%;
+    }
   }
   &__name {
     position: relative;
@@ -207,6 +260,9 @@
       position: relative;
       color: #c66ceb;
       z-index: 2;
+      @include breakpoint(sm) {
+        padding-left: 60px;
+      }
     }
     &:after {
       content: attr(data-number);
@@ -218,6 +274,18 @@
       z-index: 1;
       position: absolute;
       -webkit-text-fill-color: #fff;
+       @include breakpoint(sm) {
+         left: 0;
+       }
+    }
+  }
+  &__btn{
+    display: none;
+    @include breakpoint(sm) {
+      margin: 0 auto 20px;
+      display: flex;
+      width: 200px;
+      height: 40px;
     }
   }
   &__text {
@@ -226,12 +294,18 @@
     margin: 20px 0;
     max-width: 200px;
     line-height: 1.38;
+    @include breakpoint(sm) {
+      max-width: 100%;
+    }
   }
 }
 
 .recentPosts{
   background-color: #f1f6fc;
   padding: 50px 0;
+  @include breakpoint(sm) {
+    padding: 35px 0;
+  }
   &__title {
     font-size: 24px;
     font-weight: bold;
@@ -243,6 +317,68 @@
   }
   .btn {
     margin: 0 auto;
+    @include breakpoint(sm) {
+      width: 200px;
+      height: 40px;
+      margin: 60px auto 0;
+    }
+  }
+  .main-cards__buttons{
+    position: relative;
+  }
+  .swiper-container{
+    padding: 35px 0;
+    @include breakpoint(sm) {
+      padding: 10px 0;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin-top: 0;
+    display: none;
+    @include breakpoint(sm) {
+      display: block;
+    }
+    &:hover{
+      filter: grayscale(1);
+      opacity: 0.5;
+    }
+  }
+  .swiper-button-prev {
+    right: 22%;
+    margin-top: 4px;
+    @media(max-width: 360px){
+      right: 17%;
+      margin-top: 7px;
+    }
+  }
+  .swiper-button-next {
+    right: 70%;
+    transform: rotate(180deg);
+  }
+  .post{
+    @include breakpoint(sm) {
+      width: 90%;
+    }
+  }
+  .swiper__pagination{
+    width: 120px;
+    display: none;
+    @include breakpoint(sm) {
+      display: block;
+    }
+  }
+  .swiper-pagination-bullet{
+     background-color: #dcdcdc;
+     border: none;
+    width: 13px;
+    height: 13px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #6866d1;
+    border: none;
+    width: 40px;
+    border-radius: 10px;
   }
 }
 
@@ -254,6 +390,9 @@
   .protectedBy__block{
     max-width: 650px;
     margin-bottom: 50px;
+    @include breakpoint(sm) {
+      padding: 0 30px;
+    }
   }
   .blockInsert{
     margin: 50px 0;
@@ -273,6 +412,9 @@
   }
   &__i {
     padding: 30px;
+    @include breakpoint(sm) {
+      padding: 20px 15px;
+    }
     &:nth-child(even){
       background-color: #f5f5f5;
     }
@@ -291,6 +433,9 @@
   }
   ul{
     padding-left: 40px;
+    @include breakpoint(sm) {
+     padding-left: 25px;
+    }
     li {
       position: relative;
       margin: 5px 0;
@@ -304,6 +449,11 @@
         top: 4px;
         left: -15px;
         border-radius: 100%;
+        @include breakpoint(sm) {
+          width: 6px;
+          height: 6px;
+          top: 8px;
+        }
       }
     }
   }
@@ -311,6 +461,9 @@
 
 .reviewRS{
   padding: 70px 0 0;
+  @include breakpoint(sm) {
+    padding: 30px 0;
+  }
   &__top {
     display: flex;
     align-items: center;
@@ -329,6 +482,10 @@
         order: 2;
         margin: 35px auto;
       }
+      @include breakpoint(sm) {
+        margin: 0 auto;
+        max-width: 90%;
+      }
     }
   }
   &__content {
@@ -344,6 +501,9 @@
       order: 1;
       margin: 0 auto;
       padding: 40px;
+    }
+    @include breakpoint(sm) {
+      padding: 40px 15px 20px;
     }
   }
   &__title {
@@ -363,6 +523,10 @@
   &__img{
     position: relative;
     border-radius: 10px;
+    @include breakpoint(sm) {
+      order: 3;
+      margin: 10px 0;
+    }
    img{
      max-width: 100%;
      box-shadow: -7px 0 20px rgba(0, 0, 0, 0.39);
@@ -378,6 +542,10 @@
       @include breakpoint(lg) {
         float: none;
       }
+      @include breakpoint(sm) {
+        max-width: 90%;
+        margin: 10px auto;
+      }
       &:after{
         content: '';
         position: absolute;
@@ -389,6 +557,9 @@
         margin-left: -50%;
         transform: translateX(50%);
         top: 50px;
+        @include breakpoint(sm) {
+          display: none;
+        }
       }
     }
     &-2 {
@@ -398,10 +569,17 @@
         float: none;
         margin: 10px auto;
       }
+      @include breakpoint(sm) {
+        margin: 0 auto;
+      }
       img{
         @include breakpoint(lg) {
           display: block;
           margin: 0 auto;
+        }
+        @include breakpoint(sm) {
+          max-width: 90%;
+          margin: 10px auto;
         }
       }
       &:after {
@@ -413,6 +591,9 @@
         left: 50px;
         z-index: -1;
         top: 50px;
+        @include breakpoint(sm) {
+          display: none;
+        }
       }
     }
     &-3 {
@@ -423,11 +604,24 @@
         margin: 0 auto;
         display: block;
       }
+      @include breakpoint(sm) {
+        padding: 0;
+      }
+      img{
+        @include breakpoint(sm) {
+          max-width: 90%;
+          margin: 10px auto;
+        }
+      }
     }
   }
   &__s{
     float: none;
     clear: both;
+    @include breakpoint(sm) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__name {
     font-size: 20px;
@@ -435,15 +629,24 @@
     color: #000;
     padding-left: 50px;
     margin-bottom: 10px;
+    @include breakpoint(sm) {
+      padding: 0 15px;
+    }
   }
   &__text-2 {
     font-size: 14px;
     line-height: 1.57;
     color: #808080;
     padding-left: 50px;
+    @include breakpoint(sm) {
+      padding: 0 15px;
+    }
   }
   &__block{
     padding: 15px 0;
+    @include breakpoint(sm) {
+      padding: 10px 0;
+    }
   }
 }
 .siteOfDay{
@@ -463,6 +666,10 @@
   @media(max-width:650px) {
     flex-direction: column;
   }
+  @include breakpoint(sm) {
+    margin: 0 15px;
+    border-radius: 20px;
+  }
   &:after{
     content: '';
     position: absolute;
@@ -474,7 +681,7 @@
     margin-right: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%) rotate(45deg);
-    border-radius: 30px;
+    border-radius: 40px;
     z-index: 1;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
     @media(max-width: 1024px){

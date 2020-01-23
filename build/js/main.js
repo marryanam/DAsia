@@ -73,6 +73,8 @@ $(window).on("load", function () {
 
 $(document).ready(function () {
 
+  $('select').niceSelect();
+
   /*---------------------------------   counters slider   -------------------------------*/
 
   function getNextRate() {
@@ -162,10 +164,13 @@ $(document).ready(function () {
     $(document).scroll(function () {
       var y = $(this).scrollTop();
       var body = document.body.scrollHeight;
-      if (y > body/2) {
-        $('.tab__item-2').fadeIn();
+      if (y > body/3) {
+        $('.tab__item-2 .tab__content').fadeIn();
+        $('.tab__content .tab__icon').on("click", function () {
+          $(this).parent().fadeOut();
+        });
       } else {
-        $('.tab__item-2').fadeOut();
+        $('.tab__item-2 .tab__content').fadeOut();
       }
     });
 

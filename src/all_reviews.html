@@ -1,0 +1,393 @@
+//= template/head.html
+<div class="allReviewsPage">
+  //= template/header.html
+  <main>
+    //= template/tabs.html
+    <section>
+      <div class="container">
+        <div class="allReviews">
+          <div class="article__slider">
+            <div class="title">Top Services</div>
+            <div class="article__sliderBlock">
+              <div class="swiper-js articleSlider container_swiper">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    //= template/slider_item.html
+                  </div>
+                </div>
+                <div class="main-cards__buttons">
+                  <div class="swiper-button-next">
+                    <svg data-name="Right arrow" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 47 47">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #fff;
+                            stroke-width: 2px;
+                          }
+                        </style>
+                      </defs>
+                      <circle data-name="Circle right" class="cls-1" cx="23.5" cy="23.5" r="22.5" />
+                      <image data-name="arrow right" x="12" y="16" width="22" height="15"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAPCAYAAADgbT9oAAAA+ElEQVQ4ja2UPUpDQRRGT/5UcBOSzkYRQSyEqIWFIGpjOnfhGix0D+4jINhYBAQLhQSsTHABgtZHLkzgEZ+K780HHwwzlzPDnW8Gtcwttac+qkc/1PzqJt/VAPaA67QyLan5WyW77qvP6lDdVZtVTjw/caC+qyN1uyq0CF5UT9SpOla3qgKL4I56loB36npdaLgNnAJXQAu4BbrJdTRpqB/Ack3QvD4DfA5cRkCAG2CUAfwa/VgIuPqiDtTVHD2eDZbUvvqWMryRCzzzcfRcfVI3c+S46MMUvXt1J9fLC8eFBjw+oAd1rQq47BOKdAyAC6ADrPw7E8AXGA65pIsZy3cAAAAASUVORK5CYII=" />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg data-name="Left arrow" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 47 47">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: none;
+                            stroke: #fff;
+                            stroke-width: 2px;
+                          }
+                        </style>
+                      </defs>
+                      <circle data-name="Circle left" class="cls-1" cx="23.5" cy="23.5" r="22.5" />
+                      <image data-name="arrow left" x="13" y="16" width="22" height="15"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAPCAYAAADgbT9oAAAA7UlEQVQ4ja3UzSqFURSH8f/BQbkHTE+JdEqK8jEwUGLETBm5ABm4B1dkdCYGShlQlOHJBSiG+mnXe+r4GL3tVWu013r2bq9n76BNHuABW5j8r38i7WLYdF0n2UnS+UNpeeIJbOMOT9j9XdMWPIKv4xnv2KsFHuUaXjDEEWZqgUuuYNBscIxuB/0k8y2HOB5LSc6TfCW5LOCPJHMVwOPxWcAbSRYqwHpJzhr1rmrdcQ83eMUppmtAVxuX33CC2Roe9/FY5oTDGh4X6CZuG8X2a728Zdw3H1GBFgl+1Ey1NGAxSTfJRZJB+XJ+rCb5BlA1uVu8sULSAAAAAElFTkSuQmCC" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="reviews">
+            <div class="reviews__title">All Reviews <span>120 sites</span></div>
+
+            <div class="reviews__filter">
+              <select class="reviews_f_recency">
+                <option data-display="Sort Recency">Sort Recency</option>
+                <option value="Rating">Rating</option>
+                <option value="Recency">Recency</option>
+              </select>
+              <select class="reviews_f_all">
+                <option data-display="View All">View All</option>
+                <option value="All">All</option>
+                <option value="Toprated">Top rated</option>
+              </select>
+              <select class="reviews_f_girls">
+                <option data-display="Girls All">Girls All</option>
+                <option value="All">All</option>
+                <option value="Asian">Asian</option>
+              </select>
+              <div class="reviews__btn">
+                Clear filters
+              </div>
+            </div>
+
+            <div class="reviews__block">
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderItem">
+                <div class="sliderItem__img">
+                  <img src="img/234343.png" alt="#">
+                </div>
+                <div class="sliderItem__content">
+                  <div class="sliderItem__title">AsiaMe Review</div>
+                  <div class="sliderItem__top">
+                    <div class="sliderItem__top_r">4.5
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <image data-name="icon star" width="24" height="24"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC10lEQVRIia2Vz0tVQRTHP2fuu9fnC9NQnmQkFIZEYMs2gUmILQI30U9qUYs27lr1P9Q2KKhFi2oXtItACglcFJhJIUGQliQlRT/U954zJ+bea70fmlfwwLw7b+ac7zlz5nvOiL4EEEDJIEdSlaf/U3VLzWglQHKOXBbUVHYAt9L5IeBbFiOzCQfHMfkekJ54nlGyOihAeAEKAuLzeSFZ26oTKAPk2vrjq8L5n35gYKscGEw0gmkLcUurayEwksU+i4NjhB1DiAG3XL0+FO9tIGuxqAllO9ACtAFXye0SKh/qqSzxHnwGvgM/gR9AKUllIt7BQVDPjiKS241Ee5GoGwk7kaidoNiKRFBZoNowlcPAKLAAzAMzOHnPiplH8Pmc8YX2AMwpgm0gBTARSB6kKfmaPJSmofJlLQe1Ir7I8uiyt1UkcBP+BNfA9WF/74fFNA3VSJowJwM4NkBLEahns84R2Cv+kl8AZ8C9AZvS0FYNt9E9pnFIHL13QmDnJCqfRnR0lUWvgBPAZDa0xuh1OULLIRLYWQkrJxHGqKPpW+Ac8Hqz4G45ihscgf1EU/k8wvPV7fo6mErbwFQmcG9dDtElTw43K+GKt31Wr1IvE8D1LJFrKcQuNsc8kHDlrs95vdp67bp9I3BX8pE3gzMxJVVlG7Yx3vUcHFgPGCdxzmNw0WR4saYoYaXBZK0U+UbW1QBsQFcC3O/CP/Ba6QU6spxgJ9BdG7WJC8iVI7CyFjixjTN7UPm60Qm6EIrJM52kw/4q4MrhuBg7LFFlmMCON1ipNCPaSs5SPXLqanuACJ3qpIVKiPrhZFKMu0lgb6NSinUC+xijl9Say6jp8/eCkgcfWO3pcr76qvFVzaCWowiYxtg7Eug94GNdvCXQGxLYR6g7i5iLaoNeVTkqTu5X93WxY3VPq/qWIUWMe4Iz7/65dkkTS8JI5+l/4/ahMhi/DaIP/zoA/gAsG/wQgd2FzgAAAABJRU5ErkJggg==" />
+                      </svg>
+                    </div>
+                    <div class="sliderItem__top_n">(1250 views)</div>
+                  </div>
+                  <div class="sliderItem__text">About Some dating websites prefer to cater to
+                    a wider audience and have appropriately vague
+                    names. Christian Filipina, however, doesn’t let... </div>
+                  <div class="sliderItem__btns">
+                    <div class="read">Read Review</div>
+                    <div class="btn">Visit Site</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="decorationLine"></div>
+            <div class="pagination">
+              <a href="#" class="prev">Back</a>
+              <ul>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+              </ul>
+              <a href="#" class="next">Forward</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="evaluation">
+        <div class="evaluation__title">Evaluation Process</div>
+        <div class="container">
+          <div class="evaluation__item">
+            <div class="evaluation__name" data-number="01"><span>Select site</span></div>
+            <div class="evaluation__text">
+              Lorem Ipsum is simply
+              dummy text of the printing
+              and typesetting industry
+            </div>
+          </div>
+          <div class="evaluation__item">
+            <div class="evaluation__name" data-number="02"><span>Fing a girl</span></div>
+            <div class="evaluation__text">
+              Lorem Ipsum is simply
+              dummy text of the printing
+              and typesetting industry
+            </div>
+          </div>
+          <div class="evaluation__item">
+            <div class="evaluation__name" data-number="03"><span>Chat with a girl</span></div>
+            <div class="evaluation__text">
+              Lorem Ipsum is simply
+              dummy text of the printing
+              and typesetting industry
+            </div>
+          </div>
+          <div class="evaluation__item">
+            <div class="evaluation__name" data-number="04"><span>Meet with her</span></div>
+            <div class="evaluation__text">
+              Lorem Ipsum is simply
+              dummy text of the printing
+              and typesetting industry
+            </div>
+          </div>
+        </div>
+        <div class="evaluation__btn btn">
+          Go to sites rating
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        //= template/blockInsert.html
+      </div>
+    </section>
+  </main>
+  //= template/footer.html
+</div>
+//= template/footer_main.html

@@ -1,0 +1,221 @@
+.reviews{
+  padding: 20px 0;
+  @include breakpoint(sm) {
+    padding: 20px 0 0;
+  }
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint(lg) {
+      justify-content: space-around;
+    }
+    @include breakpoint(sm) {
+     padding-bottom: 10px;
+    }
+    .sliderItem__title{
+      font-size: 18px;
+    }
+    .sliderItem{
+      margin: 15px 0;
+      max-width: 360px;
+      @media(max-width: 1150px){
+        max-width: 325px;
+      }
+      @media(max-width: 1024px){
+        max-width: 290px;
+      }
+      @include breakpoint(sm) {
+        max-width: 100%;
+        width: calc(100% - 30px);
+        margin: 10px 0;
+      }
+    }
+    .sliderItem__top {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 5px 0 15px;
+      border-bottom: 0.5px solid #e1e1e1;
+      &_r{
+        box-shadow: 2.5px 7.6px 24px 0 rgba(0, 0, 0, 0.19);
+        color: #fff;
+        background-image: linear-gradient(to top, #febc5c, #fed08c);
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 10px;
+        margin-right: 10px;
+        svg{
+          filter: brightness(0) invert(1);
+          width: 12px;
+          margin-left: 3px;
+        }
+      }
+      &_n{
+        font-size: 14px;
+        color: #b3b3b3;
+      }
+    }
+    .sliderItem__text{
+      font-size: 14px;
+      font-weight: 300;
+      color: #808080;
+      padding: 10px 0;
+    }
+    .read{
+      &:hover{
+        opacity: 0.5;
+      }
+      &:after{
+        display: none;
+      }
+    }
+    .sliderItem__btns{
+      margin-top: 0;
+      justify-content: space-around;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    @include breakpoint(sm) {
+      padding: 0 15px;
+      font-size: 22px;
+    }
+    span{
+      font-size: 14px;
+      font-weight: normal;
+      color: #b3b3b3;
+      margin-left: 10px;
+      text-transform: initial;
+    }
+  }
+  &__filter {
+    margin: 10px 0 0;
+    padding: 10px 0;
+    border-top: 1px solid #adb9c8;
+    display: flex;
+    align-items: center;
+    @include breakpoint(lg) {
+      flex-wrap: wrap;
+    }
+    @include breakpoint(sm) {
+      width: 90%;
+      margin: 10px auto 0;
+    }
+    .nice-select {
+      @include breakpoint(lg) {
+        margin-top: 10px;
+      }
+      @include breakpoint(sm) {
+        padding: 0 15px;
+        margin: 5px auto;
+        width: 100%;
+      }
+    }
+  }
+  &__btn{
+    font-size: 16px;
+    font-weight: normal;
+    color: #6866d1;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    @include breakpoint(lg) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+    &:before{
+      content: '';
+      background: #6866d1;
+      width: 15px;
+      height: 1px;
+      position: relative;
+      left: -25px;
+      top: 10px;
+      display: block;
+      transform: rotate(45deg);
+    }
+    &:after{
+      content: '';
+      background: #6866d1;
+      width: 15px;
+      height: 1px;
+      position: relative;
+      left: -25px;
+      top: -10px;
+      display: block;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.allReviewsPage{
+  .pagination{
+    margin-bottom: 40px;
+  }
+  .evaluation__btn{
+    display: flex;
+    margin: 0 auto;
+  }
+  .evaluation{
+    padding: 50px 0;
+    @include breakpoint(sm) {
+     margin: 40px 0;
+    }
+    .container {
+      padding: 70px 0 0;
+      @include breakpoint(sm) {
+        padding: 45px 0 0;
+      }
+    }
+  }
+  .blockInsert{
+    @include breakpoint(sm) {
+      margin: 45px 10px;
+    }
+  }
+}
+
+.nice-select {
+  margin-right: 10px;
+  border: solid 1px #e6e6e6;
+  border-radius: 0;
+  width: 220px;
+  font-size: 16px;
+  .list{
+    width: 100%;
+    border-radius: 0;
+     font-size: 18px;
+     font-weight: 400;
+  }
+
+  .current {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &:after {
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    top: 45%;
+    width: 10px;
+    height: 10px;
+  }
+}
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+  background-color: transparent;
+  color: #6866d1;
+}
