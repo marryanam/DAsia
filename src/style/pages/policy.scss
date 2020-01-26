@@ -1,0 +1,99 @@
+.policy{
+  padding: 50px 0;
+   @include breakpoint(sm) {
+     padding: 50px 15px;
+   }
+  &__title{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  &__block {
+    h2{
+      font-size: 24px;
+      padding: 20px 0;
+      text-transform: uppercase;
+      @include breakpoint(sm) {
+        font-size: 22px;
+      }
+    }
+    p{
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.policyInfo{
+  background-color: #f1f6fc;
+  padding: 50px 0;
+  @include breakpoint(sm) {
+    padding: 50px 15px;
+  }
+  &__block{
+    max-width: 700px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    p{
+      padding: 10px 0;
+    }
+    b{
+      font-weight: bold;
+    }
+    h3{
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  .geInTouch{
+    border: none;
+    margin: 25px 0 0;
+    padding-bottom: 0;
+    &__block{
+      justify-content: flex-start;
+    }
+    img{
+      margin: 0;
+    }
+    &__item{
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: left;
+    }
+    &__title,
+    &__text {
+      text-align: left;
+    }
+    &__text{
+      @media(max-width: 600px) {
+        margin: 10px 0 0;
+      }
+    }
+    &__subtitle{
+      text-align: left;
+      margin: 10px 0;
+    }
+    &__link{
+      text-align: left;
+    }
+    &__block{
+      @media(max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+  }
+  .geInTouch_i2{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
