@@ -61,6 +61,29 @@ $(window).on("load", function () {
         }
       });
     }
+    else if (_this.hasClass("general_r_Slider")) {
+      swiper = new Swiper(container, {
+        speed: 1500,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+          delay: 15000,
+        },
+        pagination: {
+          el: $(this).find(".swiper__pagination"),
+          type: 'bullets',
+        },
+        navigation: {
+          nextEl: $(this).find(".swiper-button-prev"),
+          prevEl: $(this).find(".swiper-button-next")
+        },
+        fadeEffect: {
+          crossFade: true
+        },
+      });
+    }
 
   });
   $(".swiper-container").hover(function () {
